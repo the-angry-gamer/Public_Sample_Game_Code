@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8120790262115972929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 81dcd3f8-c61d-43bc-87e6-3d13bee304c6
+  m_EditorClassIdentifier: 
+  speakerName: Jeff
+  text: Are you sure?
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 1018
+    y: 413
+    width: 300
+    height: 250
+  children:
+  - 77a5466c-280c-4e54-a832-e29472b90b12
+--- !u!114 &-7625052934450624976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 93c3d6b7-8bb8-48b9-8423-7ad9a2e40b15
+  m_EditorClassIdentifier: 
+  speakerName: Jeff
+  text: Then this is good bye
+  responseType: 2
+  dimensions:
+    serializedVersion: 2
+    x: 984
+    y: 36
+    width: 300
+    height: 250
+  children:
+  - ce9fe911-ec97-40ae-94d0-ad9317d92cb0
+--- !u!114 &-5463786564944355423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: c3afdd6e-83e6-4c54-9006-27bd401663e4
+  m_EditorClassIdentifier: 
+  speakerName: Jeff
+  text: I told you I am not going
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 78
+    y: 241
+    width: 300
+    height: 250
+  children:
+  - 77a5466c-280c-4e54-a832-e29472b90b12
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb35c6ff99edd4e039fd8b29c0fb6b48, type: 3}
+  m_Name: New Dialogue Item
+  m_EditorClassIdentifier: 
+  defaultSize: {x: 300, y: 250}
+  nodes:
+  - {fileID: -5463786564944355423}
+  - {fileID: 4682081928227563403}
+  - {fileID: -7625052934450624976}
+  - {fileID: -8120790262115972929}
+  - {fileID: 2753890135000965136}
+  forwardsColor: {r: 1, g: 1, b: 1, a: 1}
+  backwardsColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &2753890135000965136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: ce9fe911-ec97-40ae-94d0-ad9317d92cb0
+  m_EditorClassIdentifier: 
+  speakerName: Jack
+  text: Farewell
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 1366
+    y: 34
+    width: 300
+    height: 250
+  children: []
+--- !u!114 &4682081928227563403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 77a5466c-280c-4e54-a832-e29472b90b12
+  m_EditorClassIdentifier: 
+  speakerName: Jack
+  text: This is where we part ways
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 480
+    y: 96
+    width: 300
+    height: 250
+  children:
+  - 81dcd3f8-c61d-43bc-87e6-3d13bee304c6
+  - 93c3d6b7-8bb8-48b9-8423-7ad9a2e40b15
