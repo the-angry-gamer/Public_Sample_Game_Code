@@ -4,5 +4,7 @@
 /Parrella_TPC/Animations
 */Materials
 */Prefabs
+*.prefab
 *.meta
 *.fbx
+*.ogg

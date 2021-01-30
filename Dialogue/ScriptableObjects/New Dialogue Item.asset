@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: c3afdd6e-83e6-4c54-9006-27bd401663e4
   m_EditorClassIdentifier: 
   speakerName: Jeff
-  text: I told you I am not going
+  text: I told you I am not going to do that
   responseType: 0
   dimensions:
     serializedVersion: 2
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 77a5466c-280c-4e54-a832-e29472b90b12
   m_EditorClassIdentifier: 
   speakerName: Jack
-  text: This is where we part ways
+  text: This is where we part ways.. Mistakes were made
   responseType: 0
   dimensions:
     serializedVersion: 2
