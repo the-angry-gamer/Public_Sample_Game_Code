@@ -5,7 +5,10 @@ using UnityEngine;
 
 namespace AsteriaGeneral
 {
-
+    /// <summary>
+    ///     Fade away a canvas group
+    ///     at a set rate over time.
+    /// </summary>
     [System.Serializable]
     public class CanvasGroupFade
     {
@@ -17,7 +20,7 @@ namespace AsteriaGeneral
         float                   fadeScale = 2.0f;
 
         [SerializeField]
-        [Tooltip("If not a constant bar, how long before we start to fade away")]
+        [Tooltip("If not a constant bar, how long to wait before we start to fade away")]
         float                   timeToKeep = 1.0f;
 
 
@@ -31,7 +34,7 @@ namespace AsteriaGeneral
         float           alpha       = 1.0f;
         float           duration    = 0.0f;
 
-        CanvasGroup      CanGroupObject;
+        CanvasGroup     CanGroupObject;
 
 
         #endregion
@@ -113,7 +116,7 @@ namespace AsteriaGeneral
         /// </summary>
         public void Deactivate()
         {
-            if (isActive)
+            if ( isActive )
             {
                 CanGroupObject.gameObject.SetActive(false);
             }

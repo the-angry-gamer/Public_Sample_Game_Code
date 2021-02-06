@@ -50,6 +50,7 @@ namespace AsteriaDialogue.Editor
         int     settingsAreaH   = 200;
         int     settingsAreaW   = 200;
 
+        /// <summary> The nodes position relative to its parent </summary>
         enum nodeRelPosition { behind, middleRight, middeLeft, front };
 
         #region Properties
@@ -305,6 +306,10 @@ namespace AsteriaDialogue.Editor
 
         #region Drawing
 
+        /// <summary>
+        ///     Create the background of the editor window
+        /// </summary>
+        /// <param name="canvas"></param>
         void drawBackgound(Rect canvas)
         {
             var bg = Resources.Load("background") as Texture2D;
@@ -322,8 +327,13 @@ namespace AsteriaDialogue.Editor
         {
             setStyleInfo(null);
             GUILayout.BeginArea( new Rect(0,0,settingsAreaW,settingsAreaH), nodeStyle);
-            
+
             drawLabel(Filename);
+            //var checkname = drawEditableField("File Name:", Filename);
+            //if ( !checkname.Equals (Filename) )
+            //{
+            //    Filename = checkname;
+            //}
             EditorGUILayout.Space(20);
 
             EditorGUILayout.LabelField("Forward Color:", EditorStyles.whiteLabel);
@@ -452,10 +462,10 @@ namespace AsteriaDialogue.Editor
             foreach (var child in selectedDialogue.GetAllChildren(node))
             {
 
-                var end     = new Vector2( child.Dimensions.xMin,
+                Vector2 end         = new Vector2( child.Dimensions.xMin,
                                          child.Dimensions.center.y);
 
-                var pos     = determineRelativePos(node.Dimensions.xMin, node.Dimensions.xMax,
+                nodeRelPosition pos = determineRelativePos(node.Dimensions.xMin, node.Dimensions.xMax,
                                                 child.Dimensions.xMin, child.Dimensions.xMax);
 
                 if ( pos == nodeRelPosition.behind )
@@ -516,16 +526,28 @@ namespace AsteriaDialogue.Editor
 
 
         /// <summary>
-        ///     Draw a label with a white background
+        ///     Noneditable. 
+        ///     Draw a label with a white background on unity normal skin.
+        ///     Draw a label with a black background on unity pro skin
         /// </summary>
-        /// <param name="text">Text.</param>
+        /// <param name="text">The text to put into the label feild</param>
         void drawLabel(string text)
         {           
             GUIStyle gsAlterBg = new GUIStyle();
-            gsAlterBg.normal.background = new Color(1.0f, 1.0f, 1.0f, 0.7f).MakeTex(600, 1);
+            
+            if (EditorGUIUtility.isProSkin)
+            {
+                gsAlterBg.normal.background = new Color(0.0f, 0.0f, 0.0f, 0.7f).MakeTex(600, 1);
+            }
+            else
+            {
+                gsAlterBg.normal.background = new Color(1.0f, 1.0f, 1.0f, 0.7f).MakeTex(600, 1);
+            }
+
             GUILayout.BeginHorizontal(gsAlterBg);
             EditorGUILayout.LabelField(text);
             GUILayout.EndHorizontal();
+
         }
 
         /// <summary>

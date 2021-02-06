@@ -15,7 +15,7 @@ public class Anim_SetRandomInteger : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        int random = Random.Range( min: MinInteger, max: MaxInteger + 1 );
+        int random = Random.Range( minInclusive: MinInteger, maxExclusive: MaxInteger + 1 );
         animator.SetInteger(ParameterName, random);
     }
 

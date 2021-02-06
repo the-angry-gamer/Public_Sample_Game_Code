@@ -1,0 +1,234 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4403622806254176844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: e2144aa9-5a41-45eb-aca5-70e2035e7201
+  m_EditorClassIdentifier: 
+  speakerName: Apollo
+  text: Oh yeah like blasters
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 1026
+    y: 807
+    width: 300
+    height: 250
+  children:
+  - cd10c348-7b84-4af7-95d8-4ced1b134237
+--- !u!114 &-3291326244497437133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: cd10c348-7b84-4af7-95d8-4ced1b134237
+  m_EditorClassIdentifier: 
+  speakerName: Asteria
+  text: A boom boom boom and a bang bang bang
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 1458
+    y: 804
+    width: 300
+    height: 250
+  children: []
+--- !u!114 &-2170255021799534589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 0c9dfe58-d2c2-41f8-b725-b28ead1d08bc
+  m_EditorClassIdentifier: 
+  speakerName: Apollo
+  text: Hey Asteria, Ever have any thoughts on a subject?
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 134
+    y: 380
+    width: 300
+    height: 250
+  children:
+  - 900e4186-48ca-4126-9665-958159917e2f
+  - 2f379776-794d-4097-ba63-6bf1a7da2f29
+  - 151968cd-0d38-4725-bc93-7cf8ff3ad1c8
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb35c6ff99edd4e039fd8b29c0fb6b48, type: 3}
+  m_Name: Mission_2_Banter
+  m_EditorClassIdentifier: 
+  defaultSize: {x: 300, y: 250}
+  nodes:
+  - {fileID: -2170255021799534589}
+  - {fileID: 269942875234850086}
+  - {fileID: 4433137015242584163}
+  - {fileID: 550047005841245907}
+  - {fileID: 4627584596689186647}
+  - {fileID: 5732307388408702558}
+  - {fileID: -4403622806254176844}
+  - {fileID: -3291326244497437133}
+  - {fileID: 533820068004467270}
+  forwardsColor: {r: 1, g: 1, b: 1, a: 1}
+  backwardsColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &269942875234850086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 900e4186-48ca-4126-9665-958159917e2f
+  m_EditorClassIdentifier: 
+  speakerName: Asteria
+  text: No
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 600
+    y: 121
+    width: 300
+    height: 250
+  children:
+  - c7a568f3-b809-48ba-9e3a-453d5c0ed768
+--- !u!114 &533820068004467270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: c7a568f3-b809-48ba-9e3a-453d5c0ed768
+  m_EditorClassIdentifier: 
+  speakerName: Apollo
+  text: ...
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 987
+    y: 57
+    width: 300
+    height: 250
+  children: []
+--- !u!114 &550047005841245907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 151968cd-0d38-4725-bc93-7cf8ff3ad1c8
+  m_EditorClassIdentifier: 
+  speakerName: Asteria
+  text: Like blaster rifles?
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 556
+    y: 817
+    width: 300
+    height: 250
+  children:
+  - e2144aa9-5a41-45eb-aca5-70e2035e7201
+--- !u!114 &4433137015242584163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 2f379776-794d-4097-ba63-6bf1a7da2f29
+  m_EditorClassIdentifier: 
+  speakerName: Asteria
+  text: Like star ships?
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 599
+    y: 501
+    width: 300
+    height: 250
+  children:
+  - 3e84433a-174c-4350-af7d-8aaac37e9fb7
+--- !u!114 &4627584596689186647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 3e84433a-174c-4350-af7d-8aaac37e9fb7
+  m_EditorClassIdentifier: 
+  speakerName: Apollo
+  text: Yeah like starships
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 1036
+    y: 459
+    width: 300
+    height: 250
+  children:
+  - 23e6d387-33f3-4506-b798-93db137ee885
+--- !u!114 &5732307388408702558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 23e6d387-33f3-4506-b798-93db137ee885
+  m_EditorClassIdentifier: 
+  speakerName: Asteria
+  text: Big fan of the intergalactic X1
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 1427
+    y: 201
+    width: 300
+    height: 250
+  children:
+  - 0c9dfe58-d2c2-41f8-b725-b28ead1d08bc

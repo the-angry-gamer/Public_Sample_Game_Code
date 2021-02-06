@@ -23,10 +23,10 @@ namespace AsteriaDialogue
 
         [Header("Line Colors")]
         [SerializeField]
-        Color forwardsColor  = Color.white;
+        Color forwardsColor         = Color.white;
 
         [SerializeField]
-        Color backwardsColor = Color.red;
+        Color backwardsColor        = Color.red;
 
 
         #endregion
@@ -37,8 +37,8 @@ namespace AsteriaDialogue
         Dictionary<ResponseTypes.TypesOfResponse, List<Action>> actions
                         = new Dictionary<ResponseTypes.TypesOfResponse, List<Action>>();
 
-        Dictionary<string, DialogueNode>        nodeReference;
-        Dictionary<string, List<DialogueNode>>  childReference;
+        Dictionary<string, DialogueNode> nodeReference;
+        Dictionary<string, List<DialogueNode>> childReference;
 
         #endregion
 

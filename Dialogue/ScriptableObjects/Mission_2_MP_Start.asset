@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4134520670036566263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: e52b33d1-3077-4ccb-b6b4-19f9fc6a9d82
+  m_EditorClassIdentifier: 
+  speakerName: Apollo
+  text: Ready to roll?
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 266
+    y: 387
+    width: 300
+    height: 250
+  children:
+  - c71cf5d9-6a42-474a-bac7-f07d8274d79d
+  - 5ceb6611-4dae-4d8b-be8f-8f0b91dc5912
+--- !u!114 &-4132505444174580187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: c71cf5d9-6a42-474a-bac7-f07d8274d79d
+  m_EditorClassIdentifier: 
+  speakerName: Asteria
+  text: Hell yeah
+  responseType: 1
+  dimensions:
+    serializedVersion: 2
+    x: 815
+    y: 167
+    width: 300
+    height: 250
+  children:
+  - 0ad0aab3-4d81-4c4c-a43e-5ee5eff42d9a
+--- !u!114 &-3265233798401424429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 0ad0aab3-4d81-4c4c-a43e-5ee5eff42d9a
+  m_EditorClassIdentifier: 
+  speakerName: Apollo
+  text: Lets Roll!
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 1244
+    y: 241
+    width: 300
+    height: 250
+  children: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb35c6ff99edd4e039fd8b29c0fb6b48, type: 3}
+  m_Name: Mission_2_MP_Start
+  m_EditorClassIdentifier: 
+  defaultSize: {x: 300, y: 250}
+  nodes:
+  - {fileID: -4134520670036566263}
+  - {fileID: -4132505444174580187}
+  - {fileID: 6248952038066068040}
+  - {fileID: -3265233798401424429}
+  forwardsColor: {r: 1, g: 1, b: 1, a: 1}
+  backwardsColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &6248952038066068040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 5ceb6611-4dae-4d8b-be8f-8f0b91dc5912
+  m_EditorClassIdentifier: 
+  speakerName: Asteria
+  text: Not yet
+  responseType: 2
+  dimensions:
+    serializedVersion: 2
+    x: 797
+    y: 715
+    width: 300
+    height: 250
+  children: []

@@ -13,7 +13,7 @@ namespace AsteriaGeneral
         Vector3         _direction;
         RaycastHit[]    hits;
 
-        GameObject      closestHit;
+        //GameObject      closestHit;
 
         internal Vector3 Start
         {
@@ -53,6 +53,23 @@ namespace AsteriaGeneral
                     return null;
                 }
             }
+        }
+
+
+        /// <summary>
+        ///     Get the closest hits distance from the object 
+        /// </summary>
+        internal float ClosestHitDistance
+        {
+            get
+            {
+                if (hits.Count() > 0)
+                {
+                    return hits[0].distance;
+                }
+                return _distance;
+            }
+
         }
 
         /// <summary>
@@ -111,21 +128,6 @@ namespace AsteriaGeneral
             }
         }
 
-        /// <summary>
-        ///     Get the closest hits distance from the object 
-        /// </summary>
-        internal float ClosestHitDistance
-        {
-            get
-            {
-                if ( hits.Count() > 0 )
-                {
-                    return hits[0].distance; 
-                }
-                return _distance;
-            }
-
-        }
 
         /// <summary>
         ///     Get the furthest distance we can go

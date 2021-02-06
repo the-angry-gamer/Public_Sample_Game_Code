@@ -36,6 +36,8 @@ namespace AsteriaDialogue
 
         #region Properties
 
+        public bool HasSpoken { get; set; }
+
         public List<string> Children
         {
             get
@@ -97,12 +99,20 @@ namespace AsteriaDialogue
 
         #region Getters
 
+        /// <summary>
+        ///     Get the dimensions of the node 
+        ///     for the gui
+        /// </summary>
+        /// <returns>
+        ///     A rect of the node dimensions
+        /// </returns>
         public Rect GetRect()
         {
             return dimensions;
         }
 
         #endregion
+
 
         #region Unity Editor Specific
 
@@ -213,7 +223,6 @@ namespace AsteriaDialogue
 #endif
 
         #endregion
-
 
     }
 }

@@ -13,18 +13,18 @@ namespace AI_Asteria
 
         AIStateMachine stateMachine;
 
-        /// <summary>
-        ///     Set the state machine associated with this sensor
-        /// </summary>
+        /// <summary> Set the state machine associated with this sensor </summary>
         internal AIStateMachine StateMachine    { set { stateMachine = value; } }
 
         internal float          SensorRadius    { get; private set; }
 
+        /// <summary> Only available on capsule colliders   </summary>
         internal float          SensorHeight    { get; private set; }
 
+        /// <summary> Only available on box colliders       </summary>
         internal Vector3        SensorSize      { get; private set; }
 
-
+        /// <summary> The type of collider of this sensor   </summary>
         internal SensorType Type;
 
 

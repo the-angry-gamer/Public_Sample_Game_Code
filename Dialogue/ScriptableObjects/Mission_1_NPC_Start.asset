@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7886068054205611554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 876efb03-8fbd-4d53-b807-0a832678321e
+  m_EditorClassIdentifier: 
+  speakerName: Apollo
+  text: I don't want to help
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 533
+    y: 297
+    width: 300
+    height: 250
+  children:
+  - f093f95e-6134-4311-95be-de311ca9ac25
+--- !u!114 &-6624784126123004595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 357b5b23-32ee-4299-bd44-7aaf82d0b002
+  m_EditorClassIdentifier: 
+  speakerName: Apollo
+  text: Fine im in
+  responseType: 1
+  dimensions:
+    serializedVersion: 2
+    x: 1328
+    y: 342
+    width: 300
+    height: 250
+  children: []
+--- !u!114 &-6540716042516694584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: f093f95e-6134-4311-95be-de311ca9ac25
+  m_EditorClassIdentifier: 
+  speakerName: Asteria
+  text: I cannot do this alone
+  responseType: 3
+  dimensions:
+    serializedVersion: 2
+    x: 922
+    y: 286
+    width: 300
+    height: 250
+  children:
+  - 357b5b23-32ee-4299-bd44-7aaf82d0b002
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb35c6ff99edd4e039fd8b29c0fb6b48, type: 3}
+  m_Name: Mission_1_NPC_Start
+  m_EditorClassIdentifier: 
+  defaultSize: {x: 300, y: 250}
+  nodes:
+  - {fileID: 449630030924050222}
+  - {fileID: -7886068054205611554}
+  - {fileID: -6540716042516694584}
+  forwardsColor: {r: 1, g: 1, b: 1, a: 1}
+  backwardsColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &449630030924050222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e0a0a3eb18f4306b6f860c94133151, type: 3}
+  m_Name: 964c5caa-4a15-460e-962d-957b1923c4c0
+  m_EditorClassIdentifier: 
+  speakerName: 'Asteria '
+  text: I need your help
+  responseType: 0
+  dimensions:
+    serializedVersion: 2
+    x: 110
+    y: 304
+    width: 300
+    height: 250
+  children:
+  - 876efb03-8fbd-4d53-b807-0a832678321e
