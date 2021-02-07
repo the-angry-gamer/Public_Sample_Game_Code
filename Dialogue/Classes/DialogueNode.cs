@@ -6,6 +6,11 @@ using UnityEngine;
 
 namespace AsteriaDialogue
 {
+
+    /// <summary>
+    ///     A single node that will control a line
+    ///     of dialogue in game
+    /// </summary>
     public class DialogueNode : ScriptableObject
     {
 

@@ -15,8 +15,13 @@ namespace Human_Controller
 
         public Transform target;
 
+        [SerializeField]
         [Tooltip("What to do with the cursor")]
-        public CursorLockMode cursorLockMode    = CursorLockMode.Confined;
+        CursorLockMode cursorLockMode    = CursorLockMode.Confined;
+
+        [SerializeField]
+        [Tooltip("Show / Hide the cursor in the game window")]
+        bool ShowCursor = true;
     
         [Tooltip("What layer will be culled")]
         public LayerMask cullingLayer           = 1 << 0;
@@ -225,7 +230,8 @@ namespace Human_Controller
         {
             if (target == null || targetLookAt == null) return;
 
-            Cursor.lockState = cursorLockMode;
+            Cursor.lockState    = cursorLockMode;
+            Cursor.visible      = ShowCursor;
 
             CameraMovement();
 
