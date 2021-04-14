@@ -6,8 +6,6 @@ using UnityEngine;
 namespace AI_Asteria
 {
 
-   
-	
 	[RequireComponent( typeof( Collider ) )]
 	public abstract class AIStateMachine : MonoBehaviour, IAIReactions
 	{
@@ -321,7 +319,7 @@ namespace AI_Asteria
 
         #endregion
 
-			/// <summary>
+		/// <summary>
 		///		Determine if we need to update the 
 		///		current state type we are in and set
 		///		an associated script

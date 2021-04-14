@@ -4,14 +4,14 @@ using UnityEngine;
 using AsteriaHealth;
 using UnityEditor;
 
-[CustomEditor(typeof(RagdollDeath))]
+[CustomEditor(typeof(SeperateRagdollDeath))]
 public class RagdollDeathEditor : Editor
 {
-    RagdollDeath baseClass;
+    SeperateRagdollDeath baseClass;
 
     public override void OnInspectorGUI()
     {
-        baseClass = (RagdollDeath)target;
+        baseClass = (SeperateRagdollDeath)target;
 
         base.OnInspectorGUI();
         drawButton();

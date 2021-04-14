@@ -16,7 +16,7 @@ namespace AsteriaHealth
     }
 
 
-    public class RagdollDeath : MonoBehaviour, IDeath
+    public class SeperateRagdollDeath : MonoBehaviour, IDeath
     {
 
         #region Editor

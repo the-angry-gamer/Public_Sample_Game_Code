@@ -19,7 +19,7 @@ namespace AsteriaHealth
 
         [ SerializeField ]
         [ Tooltip( "The original device that turns into this ragdoll" ) ]
-        RagdollDeath original;
+        SeperateRagdollDeath original;
 
         public bool isRagdoll { get { return gameObject.activeInHierarchy; } }
 
@@ -27,7 +27,7 @@ namespace AsteriaHealth
         /// <summary>
         ///     Set the object that called the ragdoll
         /// </summary>
-        public RagdollDeath Original
+        public SeperateRagdollDeath Original
         {
             set { original = value; }
         }

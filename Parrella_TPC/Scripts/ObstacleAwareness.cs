@@ -299,10 +299,10 @@ namespace Human_Controller
 
         #region Properties
 
-        public bool             DrawRays        { get; set; } = true;
-        ObjectChecking   crouchChecks    { get { return _crouchChecks; } }
-        ObjectChecking   walkChecks      { get { return _walkChecks; } }
-        ObjectChecking   runChecks       { get { return _runChecks; } }
+        public bool         DrawRays        { get; set; } = true;
+        ObjectChecking      crouchChecks    { get { return _crouchChecks; } }
+        ObjectChecking      walkChecks      { get { return _walkChecks; } }
+        ObjectChecking      runChecks       { get { return _runChecks; } }
 
         /// <summary> Determines whether we can stand up or not </summary>
         public bool             canStandUp      { get; internal set; }
